@@ -1,44 +1,67 @@
-# .
+# TECNOLÓGICO NACIONAL DE MÉXICO
 
-This template should help get you started developing with Vue 3 in Vite.
+## INSTITUTO TECNOLÓGICO DE OAXACA
 
-## Recommended IDE Setup
+### Ingeniería en Sistemas Computacionales
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+# Pokemon Deck (Generador Aleatorio de Mazo)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Materia:** DSD2303 · Desarrollo de Servicios Web
+- **Grupo:** 8SC
+- **Docente:** Ing. Luis Angel Zaragoza Farrera
+- **Estudiante:** 22161058 - Wilver Alfredo Flores Santiago
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Descripción del Proyecto
 
-## Project Setup
+**Pokemon Deck** es una aplicación web de SPA (Single Page Application) desarrollada con **Vue.js 3** que consume la **PokéAPI** de manera dinámica. Su objetivo principal es permitir al usuario generar un mazo (deck) personalizado y totalmente aleatorio de cartas de Pokemon, especificando la cantidad de cartas deseadas mediante un formulario interactivo.
 
-```sh
-npm install
-```
+Cada carta del mazo se presenta con un diseño visual inspirado en coleccionables, mostrando información clave obtenida en tiempo real desde la API.
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
-```
+## Características Principales
 
-### Compile and Minify for Production
+- **Generación Aleatoria Dinámica:** Permite configurar mediante un formulario cuantas cartas se desean incluir en el mazo.
+- **Consumo de la PokéAPI:** Se conecta al endpoint masivo para obtener la lista de Pokemon disponibles y procesa los detalles individuales en paralelo mediante `Promise.all()`.
+- **Componentes Modulares:**
+  - `<PokemonDeck />`: Componente contenedor principal que gestiona el formulario y la lógica de negocio.
+  - `<PokemonCard />`: Componente dedicado a renderizar la información de cada carta de forma individual (ID, nombre, tipos, imagen oficial, altura, peso y habilidades).
+- **Gestión de Caché:** Optimiza las peticiones HTTP almacenando localmente la lista general de Pokemon para evitar consultas repetitivas innecesarias.
 
-```sh
-npm run build
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## Tecnologías y Herramientas Utilizadas
 
-```sh
-npm run lint
-```
+- **Vue.js 3** (Composition API con `<script setup>`)
+- **Vite** (Entorno de desarrollo y empaquetador)
+- **Vue Router** (Gestión de rutas de la aplicación)
+- **CSS3 Moderno** (Diseño responsivo con Flexbox y CSS Grid)
+- **PokéAPI** (Fuente de datos externa)
+
+---
+
+## Instrucciones de Instalación y Ejecución
+
+Sigue estos pasos para clonar y ejecutar el proyecto localmente en tu computadora:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/WilverAFS/pokemon_deck.git
+   cd pokemon_deck
+   ```
+2. **Intalar las dependencias:**
+   ```bash
+   npm install
+   ```
+3. **Iniciar el servidor de desarrollo local:**
+   ```bash
+   npm run dev
+   ```
+4. **Abre la URL local que muestra la terminal:**
+   ```bash
+   http://localhost:5173/
+   ```
