@@ -1,0 +1,97 @@
+.pokemon-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: 3px solid #333;
+  border-radius: 16px;
+  width: 220px;
+  padding: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #333;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.image-container {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.pokemon-types {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.type-badge {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  background-color: #777;
+}
+
+.type-badge.fire {
+  background-color: #ff4422;
+}
+.type-badge.water {
+  background-color: #3399ff;
+}
+.type-badge.grass {
+  background-color: #77cc55;
+}
+.type-badge.electric {
+  background-color: #ffcc33;
+  color: #333;
+}
+.type-badge.poison {
+  background-color: #aa5599;
+}
+.type-badge.normal {
+  background-color: #aaaa99;
+}
+.type-badge.bug {
+  background-color: #aabb22;
+}
+.type-badge.flying {
+  background-color: #8899ff;
+}
+
+.pokemon-info,
+.pokemon-abilities {
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.pokemon-abilities ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.pokemon-abilities li {
+  text-transform: capitalize;
+}
