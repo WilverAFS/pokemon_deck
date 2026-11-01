@@ -1,11 +1,25 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div id="app">
+    <PokemonDeck />
+  </div>
 </template>
 
-<style scoped></style>
+<script setup>
+import PokemonDeck from '@/components/PokemonDeck.vue'
+</script>
+
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
+}
+</style>
